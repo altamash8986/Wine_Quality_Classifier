@@ -58,7 +58,7 @@ The model achieved an accuracy of approximately: 96.58 %
 
 ---
 
-### Author
+### Licence & Author
 
 This project is licensed under the [MIT License](LICENSE).  
 You're free to use and modify it, but *you must give credit* to the original author: **Mohd Altamash**.
