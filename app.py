@@ -10,8 +10,7 @@ from sklearn.model_selection import train_test_split
 dataset = pd.read_csv("wine_quality_classifier.csv")
 
 # create a condition means wine is good above 7
-threshold = 7
-dataset["fine"] = (dataset["quality"] >= threshold).astype(int)
+dataset["fine"] = (dataset["quality"] >= 7).astype(int)
 
 # features and target
 x = dataset.drop(["quality", "fine"], axis=1)
@@ -71,7 +70,6 @@ inputs = [
     gr.Slider(
         minimum=float(dataset[column].min()),
         maximum=float(dataset[column].max()),
-        value=float(dataset[column].mean()),
         step=0.1,
         label=column,
     )
